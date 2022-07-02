@@ -34,7 +34,7 @@ Directory where scripts are stored.
 
 ### `command`
 
-**Required** Command to execute(`push` or `deploy`).
+**Required** Command to execute(`push`, `pull`, or `deploy`).
 
 If `deploy` is selected, this action is running `clasp push -f` just before.
 

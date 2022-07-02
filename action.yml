@@ -26,7 +26,7 @@ inputs:
     description: 'Directory where scripts are stored'
     required: false
   command:
-    description: 'Command to execute(push or deploy)'
+    description: 'Command to execute(push, pull, or deploy)'
     required: true
   description:
     description: 'Description of the deployment'
