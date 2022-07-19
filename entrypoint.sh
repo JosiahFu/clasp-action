@@ -25,7 +25,7 @@ rootDir="."
 
 if [ -n "$7" ]; then
   if [ -e "$7" ]; then
-    rootdir="$7"
+    rootDir="$7"
   else
     echo "rootDir is invalid."
     exit 1
