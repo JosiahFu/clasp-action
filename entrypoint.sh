@@ -21,21 +21,24 @@ END
 
 echo $CLASPRC > ~/.clasprc.json
 
-CLASP=$(cat <<-END
-    {
-        "scriptId": "$6"
-    }
-END
-)
+rootDir="."
 
 if [ -n "$7" ]; then
   if [ -e "$7" ]; then
-    cd "$7"
+    rootdir="$7"
   else
     echo "rootDir is invalid."
     exit 1
   fi
 fi
+
+CLASP=$(cat <<-END
+    {
+        "scriptId": "$6",
+        "rootDir": "$rootDir"
+    }
+END
+)
 
 echo $CLASP > .clasp.json
 
